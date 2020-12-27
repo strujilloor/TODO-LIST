@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+.custom-card {
+   /* Display & Box Model */
+   width: 350px;
+   height: 400px;
+
+   /* Color */
+   background-color: white;
+}
+.custom-card-header {
+   /* Color */
+   background: rgb(251,222,95);
+   background: linear-gradient(90deg, rgba(251,222,95,1) 0%, rgba(255,210,14,1) 100%);
+}
+.custom-delete-list-btn {
+   /* Positioning */
+   width: 5px;
+   height: 5px;
+}
+.custom-card-body {
+   /* Color */
+   background-color: #F1EFEF;
+}
+.custom-table-container {
+   /* Positioning */
+   top: -42px;
+
+   /* Display & Box Model */
+   overflow-y: auto; 
+   width: 315px;
+   height: 231px;
+
+   /* Color */
+   background-color: #F8F8F8;
+}
+
+input, input:focus {
+   /* Display & Box Model */
+   border: 1px solid rgba(249,220,89,1);
+
+   /* Color */
+   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z'/><path fill-rule='evenodd' d='M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z'/></svg>");
+   background-position-x: 9px;
+   background-position-y: 13px;
+   background-size: .8em;
+   background-repeat: no-repeat;
+   background-color: transparent;
+   background-color: rgb(247,223,114);
+   background-color: linear-gradient(90deg, rgba(247,223,114,0.9505599975585938) 0%, rgba(249,220,89,1) 100%);
+
+   /* Text */
+   text-align: center;
+}
+.list-name {
+   /* Text */
+   font-size: 32px;
+   font-weight: 800;
+   font-family: 'Roboto', sans-serif;
+}
+.btn-crear {
+   /* Display & Box Model */
+   border: 1px solid rgba(249,220,89,1);
+   /* Color */
+   background-color: rgb(247,223,114);
+   background-color: linear-gradient(90deg, rgba(247,223,114,0.9505599975585938) 0%, rgba(249,220,89,1) 100%);
+   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-folder-plus' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M9.828 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91H9v1H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181L15.546 8H14.54l.265-2.91A1 1 0 0 0 13.81 4H9.828zm-2.95-1.707L7.587 3H2.19c-.24 0-.47.042-.684.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293z'/><path fill-rule='evenodd' d='M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z'/></svg>");
+   background-position-x: 110px;
+   background-position-y: center;
+   background-size: .9em;
+   background-repeat: no-repeat;
+}
+.btn-actualizar {
+   /* Display & Box Model */
+   border: 1px solid rgba(249,220,89,1);
+   /* Color */
+   background-color: rgb(247,223,114);
+   background-color: linear-gradient(90deg, rgba(247,223,114,0.9505599975585938) 0%, rgba(249,220,89,1) 100%);
+   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-90deg-up' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z'/></svg>");
+   background-position-x: 110px;
+   background-position-y: center;
+   background-size: .9em;
+   background-repeat: no-repeat;
+}
+.btn-actualizar:hover, .btn-crear:hover, .btn-eliminar:hover, .btn-editar:hover {
+   /* Other */
+   transform: scale(1.04);
+}
+.task {
+   /* Display & Box Model */
+   border-bottom: 1px solid rgb(247,223,114);
+   border-left: 5px solid #C5E946;
+   height: 40px;
+   /* Color */
+   background-color: white;
+}
+.task td {
+   /* Display & Box Model */
+   padding: 10px;
+
+   /* Text */
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+}
+.btn-eliminar {
+   /* Display & Box Model */
+   width: 30px;
+   height: 30px;
+   border: 1px solid #AF4FA2;
+   border-radius: 5px;
+
+   /* Color */
+   background-color: #AF4FA2;
+   background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-trash' viewBox='0 0 16 16'><path d='M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z'/><path fill-rule='evenodd' d='M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z'/></svg>");
+   background-position-x: center;
+   background-position-y: center;
+   background-size: 1.2em;
+   background-repeat: no-repeat;
+}
+.btn-editar {
+   /* Display & Box Model */
+   width: 30px;
+   height: 30px;
+   border: 1px solid rgb(247,223,114);
+   border-radius: 5px;
+
+   /* Color */
+   background-color: rgb(247,223,114);
+   background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil-square' viewBox='0 0 16 16'><path d='M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z'/><path fill-rule='evenodd' d='M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z'/></svg>");
+   background-position-x: center;
+   background-position-y: center;
+   background-size: 1em;
+   background-repeat: no-repeat;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+:-moz-placeholder {
+   /* Firefox 18- */
+   text-align: center;
+}
+::-moz-placeholder {
+   /* Firefox 19+ */
+   text-align: center;
+}
+:-ms-input-placeholder {
+   text-align: center;
+}

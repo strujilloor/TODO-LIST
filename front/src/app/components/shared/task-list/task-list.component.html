@@ -1,0 +1,65 @@
+<div 
+  class="card custom-card">
+  <div 
+    class="
+    card-header
+    custom-card-header
+    bg-warning 
+    d-flex 
+    flex-column">
+    <button
+      class="btn-close align-self-end custom-delete-list-btn" 
+      aria-label="Close" 
+      (click)="deleteList()"></button>
+    <input
+      class="form-control rounded-pill my-2 w-75 mx-auto shadow-sm"
+      [(ngModel)]="selectedTask.name" 
+      placeholder="¿Qué piensas hacer hoy?" 
+      type="text" 
+      value="" />
+    <button
+      class="btn btn-light btn-sm btn-crear shadow-sm"
+      [hidden]="selectedTask.id !== undefined" 
+      (click)="addTask()">Crear</button>
+    <button
+      class="btn btn-light btn-sm btn-actualizar"
+      [hidden]="selectedTask.id === undefined" 
+      (click)="updateTask()">Actualizar</button>
+    <h5 class="card-title mb-5 mt-2 list-name">
+      {{ list.name }}
+    </h5>
+  </div>
+
+  <div class="card-body position-relative custom-card-body">
+    <div 
+      class="position-absolute px-3 py-3 custom-table-container">
+      <table class="w-100">
+        <tbody>
+          <tr
+            class="task"
+            *ngFor="let task of list.tasks; let index = index;"
+            [ngStyle]="{'text-decoration':task.completed?'line-through':'none'}">
+            <td>
+              <input 
+                type="checkbox" 
+                [checked]="task.completed"
+                (change)="checkTask(task)" />
+            </td>
+            <td>{{ task.name }}</td>
+            <td class="d-flex justify-content-end">
+              <button 
+                class="btn-eliminar shadow-sm me-1"
+                (click)="deleteTask(task.id)"
+              ></button>
+              <button
+                class="btn-editar shadow-sm ms-1"
+                (click)="editTask(task)"
+              ></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    
+</div>

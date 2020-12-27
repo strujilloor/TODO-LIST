@@ -1,0 +1,23 @@
+<app-header (listName)="addNewList($event)"></app-header>
+
+<div class="container my-3" >
+  <div class="
+    row 
+    row-cols-auto 
+    row-cols-md-auto
+    g-4 
+    justify-content-center">
+  
+    <app-task-list
+      *ngFor="let list of taskService.items; let i = index;" 
+      class="col"
+      [list]="list"
+      (taskToCreate)="addTask($event)"
+      (taskToUpdate)="updateTask($event)"
+      (taskIdToDelete)="deleteTask($event)"
+      (taskToCheck)="checkTask($event)"
+      (listIdToDelete)="deleteList($event)">
+    </app-task-list>
+  
+  </div>
+</div>
